@@ -26,7 +26,7 @@ ____________________________________________________________
 
 * The data does not present any correlation between a city’s humidity and latitude nor cloudiness and latitude. On both graphs the data points are distributed fairly evenly and there is no distinctive pattern.
 
-* Additionally, there is not any correlation between a city’s average wind speed and latitude. However, the data does reveals that wind speeds in most cities typically do not exceed 20 mph. 
+* Additionally, there is not any correlation between a city’s average wind speed and latitude. However, the data does reveal that wind speeds in most cities typically do not exceed 20 mph. 
 
 #### List of Cities (from randomly generated latitudes and longitudes)
 
