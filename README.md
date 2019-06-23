@@ -1604,6 +1604,7 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
          
 plt.savefig("../Images/temp_lat.png")
 ```
+![temp_lat](https://user-images.githubusercontent.com/49836101/59982433-dffe4100-95d7-11e9-92e4-878bd96dfa95.png)
 
 ## Humidity v Latitude
 
@@ -1622,6 +1623,8 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
 
 plt.savefig("../Images/humidity_lat.png")
 ```
+![humidity_lat](https://user-images.githubusercontent.com/49836101/59982432-de347d80-95d7-11e9-9e98-6fb80dde4574.png)
+
 ## Cloudiness v Latitude
 
 ```
@@ -1640,6 +1643,7 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
 
 plt.savefig("../Images/clouds_lat.png")
 ```
+![clouds_lat](https://user-images.githubusercontent.com/49836101/59982430-dd035080-95d7-11e9-8561-8b84f78638db.png)
 
 ## Wind Speed v Latitude
 
@@ -1658,3 +1662,4 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
 
 plt.savefig("../Images/wind_lat.png")
 ```
+![wind_lat](https://user-images.githubusercontent.com/49836101/59982434-e2609b00-95d7-11e9-8c43-0b5a820992f5.png)
