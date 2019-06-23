@@ -20,7 +20,7 @@ The notebook includes:
 ____________________________________________________________
 
 
-#### Observable Trends
+### Observable City Weather Trends
 
 * Differing from expectations, the hottest cities are not necessarily those on or closest to the equator (latitude of zero degrees). Rather, the highest temperatures are from cities with latitudes around 20 degrees. This result may be combination of the earth’s tilt and varying weather patterns throughout the tropics. 
 
@@ -28,7 +28,7 @@ ____________________________________________________________
 
 * Additionally, there is not any correlation between a city’s average wind speed and latitude. However, the data does reveals that wind speeds in most cities typically do not exceed 20 mph. 
 
-## List of Cities (from randomly generated latitudes and longitudes)
+#### List of Cities (from randomly generated latitudes and longitudes)
 
 ```
 # Create a set of random lat and lng combinations
@@ -55,7 +55,7 @@ city_country = list(zip(cities, countries))
 len(city_country)
 ```
 
-## Perform API Calls (for each city)
+#### Perform API Calls (for each city)
 ```
 url = "http://api.openweathermap.org/data/2.5/weather?"
 
@@ -1577,7 +1577,7 @@ Error: 'kismayo' was not found...skippping
 Data retrieval complete
 --------------------------
 ```
-## DataFrame of each city's weather data
+#### DataFrame of each city's weather data
 ```
 # create dataframe using data from api
 weather_df = pd.DataFrame({"City" : found_cities, "Country" : found_countries, "Date" : dates,
@@ -1588,7 +1588,9 @@ weather_df.to_csv("../Output/city_weather.csv") # write data frame to csv file a
 
 weather_df.head()
 ```
-## Temperature v Latitude
+![image](https://user-images.githubusercontent.com/49836101/59982473-b98cd580-95d8-11e9-8f28-c0a1475fac05.png)
+
+#### Temperature v Latitude
 ```
 # create scatter plot of the relationship between temperature and latitude
 plt.figure(figsize = (10,5))
@@ -1604,8 +1606,9 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
          
 plt.savefig("../Images/temp_lat.png")
 ```
+![temp_lat](https://user-images.githubusercontent.com/49836101/59982433-dffe4100-95d7-11e9-92e4-878bd96dfa95.png)
 
-## Humidity v Latitude
+#### Humidity v Latitude
 
 ```
 # create scatter plot of the relationship between humidity and latitude
@@ -1622,7 +1625,9 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
 
 plt.savefig("../Images/humidity_lat.png")
 ```
-## Cloudiness v Latitude
+![humidity_lat](https://user-images.githubusercontent.com/49836101/59982432-de347d80-95d7-11e9-9e98-6fb80dde4574.png)
+
+#### Cloudiness v Latitude
 
 ```
 # create scatter plot of the relationship between cloudiness and latitude
@@ -1640,8 +1645,9 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
 
 plt.savefig("../Images/clouds_lat.png")
 ```
+![clouds_lat](https://user-images.githubusercontent.com/49836101/59982430-dd035080-95d7-11e9-8561-8b84f78638db.png)
 
-## Wind Speed v Latitude
+#### Wind Speed v Latitude
 
 ```
 # create scatter plot of the relationship between wind speed and latitude
@@ -1658,3 +1664,4 @@ plt.xlim(weather_df["Lat"].min() - 2, weather_df["Lat"].max() + 2)
 
 plt.savefig("../Images/wind_lat.png")
 ```
+![wind_lat](https://user-images.githubusercontent.com/49836101/59982434-e2609b00-95d7-11e9-8c43-0b5a820992f5.png)
